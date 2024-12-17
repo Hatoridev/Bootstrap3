@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Redesign Modal</title>
+
+    <!-- Importando o CSS do Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Importando o CSS customizado -->
+    <link rel="stylesheet" href="redesign.css">
+</head>
+<body>
+    <div class="container">
+        <div class="col-lg-4 col-lg-offset-4">
+            <!-- Botão para abrir o modal -->
+            <button class="btn btn-lg btn-block btn-primary" data-toggle="modal" data-target="#customModal">
+                Abrir Modal
+            </button>
+        </div>
+    </div>
+
+    <!-- Estrutura do Modal -->
+    <div class="modal t-modal warning fade" id="customModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Cabeçalho do modal -->
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">Redesign do Modal</h2>
+                </div>
+                <!-- Corpo do modal -->
+                <div class="modal-body">
+                    <p>Este é um modal customizado para demonstrar um redesign com estilos personalizados.</p>
+                </div>
+                <!-- Rodapé do modal -->
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Importando os scripts necessários -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+

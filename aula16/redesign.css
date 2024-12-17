@@ -1,0 +1,29 @@
+/* Personalização do modal */
+
+/* Configuração base do modal */
+.t-modal .modal-header {
+    padding: 30px 15px; /* Ajusta o espaçamento interno */
+}
+
+/* Estilização do título e botão fechar */
+.t-modal .modal-title,
+.t-modal .close {
+    color: #fff; /* Cor branca para contraste */
+}
+
+/* Estilo de modal do tipo "warning" */
+.t-modal.warning .modal-content {
+    border-color: #e67e22; /* Borda com cor laranja */
+}
+.t-modal.warning .modal-header {
+    background-color: #e67e22; /* Cabeçalho laranja */
+}
+
+/* Estilo de modal do tipo "primary" */
+.t-modal.primary .modal-content {
+    border-color: #34495e; /* Borda com cor azul-escuro */
+}
+.t-modal.primary .modal-header {
+    background-color: #34495e; /* Cabeçalho azul-escuro */
+}
+
