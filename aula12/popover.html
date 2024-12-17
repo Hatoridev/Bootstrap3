@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <!-- Definindo a codificação de caracteres para UTF-8 -->
+    <meta charset="utf-8">
+
+    <!-- Forçando o navegador a usar o modo de compatibilidade mais recente -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- Título da página, exibido na aba do navegador -->
+    <title>Curso de Bootstrap 3 - Popover</title>
+
+    <!-- Descrição da página para motores de busca -->
+    <meta name="description" content="Curso de Bootstrap 3">
+
+    <!-- Definindo a viewport para garantir a responsividade em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Link para o arquivo CSS do Bootstrap 3 -->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Container para organizar os elementos na página -->
+    <div class="container">
+        
+        <!-- Primeiro botão que, ao ser clicado, exibe o popover com o conteúdo -->
+        <button data-toggle="popover" id="outro-popover" 
+                data-content="Olá, seja bem-vindo! <h2>dsadsa</h2>" 
+                title="Mensagem">
+            Ok
+        </button>
+
+        <!-- Segundo botão para controlar a exibição do popover de forma customizada -->
+        <button id="custom-popover">
+            Chamar
+        </button>
+
+    </div>
+
+    <!-- Inclusão do jQuery, necessário para o funcionamento do Bootstrap, incluindo popovers -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    <!-- Inclusão do JavaScript do Bootstrap para fornecer funcionalidades como popovers -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!-- Script para inicializar o popover -->
+    <script>
+        // Inicializa o popover para todos os elementos com o atributo data-toggle="popover"
+        $('[data-toggle="popover"]').popover({
+            // Definindo a posição do popover em relação ao elemento
+            placement: "bottom",
+            // Desabilitando animações no popover
+            animation: false,
+            // Permitindo que o conteúdo seja interpretado como HTML
+            html: true,
+            // Delay na exibição do popover (pode ser configurado em milissegundos)
+            delay: 500
+        });
+
+        // Quando o botão com id "custom-popover" for clicado, o popover será exibido para o botão "outro-popover"
+        $('#custom-popover').on('click', function() {
+            $('#outro-popover').popover("show");
+        });
+    </script>
+
+</body>
+</html>
+
