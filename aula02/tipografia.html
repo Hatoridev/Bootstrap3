@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- A declaração <!DOCTYPE html> define que estamos usando HTML5, garantindo que o navegador renderize corretamente a página. -->
+    <meta charset="UTF-8">
+    <!-- O "charset=UTF-8" define a codificação de caracteres usada na página, o que garante que caracteres especiais e acentos sejam exibidos corretamente em todos os navegadores. -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- A meta tag viewport define como a página deve ser visualizada em dispositivos móveis. O "width=device-width" ajusta a largura da página para a largura da tela do dispositivo. -->
+    
+    <meta name="description" content="Exemplo de Tipografia com Bootstrap">
+    <!-- A meta tag description é usada para descrever o conteúdo da página. Este conteúdo é frequentemente mostrado em resultados de pesquisa. -->
+    
+    <meta name="author" content="Keven">
+    <!-- A meta tag author define o autor da página. Essa informação pode ser útil para SEO ou outros propósitos. -->
+
+    <title>Exemplo de Tipografia - Bootstrap 3</title>
+    <!-- O título da página aparece na aba do navegador e em resultados de pesquisa. -->
+    
+    <!-- Incluindo o CSS do Bootstrap a partir de uma CDN (Content Delivery Network). Essa biblioteca facilita a estilização da página com grids e componentes prontos. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- A classe "container" cria uma área centralizada e com espaçamento adequado para o conteúdo, com largura adaptável ao tamanho da tela. -->
+        
+        <h1>Exemplo de Tipografia com Bootstrap</h1>
+        <!-- Este é o título principal da página. Está dentro de uma tag <h1>, que é usada para títulos de maior importância. -->
+        
+        <div class="row">
+            <!-- A classe "row" cria uma linha para colocar colunas dentro dela. O Bootstrap usa esse sistema de grid para organizar o layout. -->
+
+            <div class="col-md-6">
+                <!-- A classe "col-md-6" cria uma coluna que ocupa metade da largura da tela em dispositivos de tamanho médio e acima (telas maiores que 768px). -->
+
+                <h2>Textos em diferentes estilos</h2>
+                <!-- Aqui temos um subtítulo da seção com a tag <h2>, normalmente usada para títulos de seções. -->
+
+                <p class="text-lowercase">este texto está em minúsculas</p>
+                <!-- A classe "text-lowercase" converte o texto dentro do parágrafo para minúsculas. Isso pode ser útil para dar um estilo específico ao texto. -->
+
+                <p class="text-uppercase">ESTE TEXTO ESTÁ EM MAIÚSCULAS</p>
+                <!-- A classe "text-uppercase" converte o texto para maiúsculas. Usada para destacar ou dar ênfase ao texto. -->
+
+                <p class="text-capitalize">este texto começa com maiúscula em cada palavra</p>
+                <!-- A classe "text-capitalize" coloca a primeira letra de cada palavra em maiúscula, útil para títulos ou para estilizar nomes próprios. -->
+            </div>
+
+            <div class="col-md-6">
+                <!-- A outra coluna ocupa também 50% da largura da tela, como a anterior. -->
+
+                <h2>Exemplos de formatação</h2>
+                <!-- Outro subtítulo para organizar as seções do conteúdo. -->
+
+                <p class="lead">Este é um texto em formato "lead", geralmente usado para destacar um parágrafo.</p>
+                <!-- A classe "lead" é usada para aplicar um estilo de texto mais destacado, como uma introdução ou uma descrição mais proeminente. -->
+
+                <p class="text-muted">Este texto está com a classe "text-muted", dando uma aparência de texto mais suave.</p>
+                <!-- A classe "text-muted" aplica uma cor de texto mais suave e opaca, útil para informações secundárias ou menos importantes. -->
+
+                <p class="text-warning">Este texto está com a classe "text-warning", exibindo uma cor amarela.</p>
+                <!-- A classe "text-warning" exibe o texto em amarelo, geralmente usada para alertas ou informações que exigem atenção. -->
+
+                <p class="text-danger">Este texto está com a classe "text-danger", exibindo uma cor vermelha para indicar perigo.</p>
+                <!-- A classe "text-danger" exibe o texto em vermelho, comumente utilizada para mensagens de erro ou alertas graves. -->
+
+                <p class="text-info">Este texto está com a classe "text-info", geralmente usada para mensagens informativas em azul claro.</p>
+                <!-- A classe "text-info" exibe o texto em azul claro, usada para mensagens informativas ou dicas. -->
+            </div>
+        </div>
+        
+        <div class="row">
+            <!-- Outra linha para mais conteúdo -->
+
+            <div class="col-md-12">
+                <!-- A classe "col-md-12" faz a coluna ocupar toda a largura disponível (100% do grid). -->
+                <h2>Listas com Bootstrap</h2>
+                <!-- Título para a seção de listas -->
+
+                <ul class="list-unstyled">
+                    <!-- A classe "list-unstyled" remove os marcadores padrão (bolinhas) de uma lista. -->
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+
+                <ul class="list-inline">
+                    <!-- A classe "list-inline" exibe os itens da lista na mesma linha, com espaçamento entre eles, sem os marcadores. -->
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inclusão do jQuery, necessário para o funcionamento de alguns componentes do Bootstrap. -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    <!-- Inclusão do JavaScript do Bootstrap. Isso permite que componentes interativos como modais e carrosséis funcionem corretamente. -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>
+
