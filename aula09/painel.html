@@ -1,0 +1,111 @@
+<!doctype html>
+<!-- A declaração DOCTYPE define que estamos utilizando HTML5. -->
+
+<html lang="pt-br">
+<!-- O atributo "lang" indica que o conteúdo da página está em português do Brasil. -->
+
+<head>
+    <!-- O <head> contém os metadados da página, como o título, links para arquivos externos e definições. -->
+    
+    <meta charset="utf-8">
+    <!-- A tag "charset" define a codificação de caracteres da página para UTF-8, garantindo a exibição correta de caracteres especiais. -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Esta tag ajuda a garantir a compatibilidade com versões antigas do Internet Explorer e otimiza a renderização em navegadores modernos. -->
+    
+    <title>Curso de Bootstrap 3</title>
+    <!-- O título da página, exibido na aba do navegador. -->
+    
+    <meta name="description" content="curso de bootstrap 3">
+    <!-- A descrição da página, usada para motores de busca e compartilhamento em redes sociais. -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- A tag "viewport" ajuda a tornar a página responsiva, ajustando a largura da tela para diferentes dispositivos. -->
+    
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o arquivo CSS do Bootstrap, que fornece os estilos para a página e componentes como o painel. -->
+</head>
+
+<body>
+    <!-- O corpo da página começa aqui. -->
+
+    <div class="jumbotron">
+        <!-- A classe "jumbotron" cria uma área de destaque na página com fundo e padding diferenciados. -->
+        
+        <div class="container">
+            <!-- "container" centraliza o conteúdo e aplica margens automáticas, ajustando a largura da página conforme o tamanho da tela. -->
+            
+            <div class="col-lg-6 col-lg-offset-3">
+                <!-- A classe "col-lg-6" define que o painel ocupará metade da largura da tela em dispositivos grandes (LG).
+                A classe "col-lg-offset-3" adiciona um espaçamento à esquerda, centralizando o painel na tela. -->
+                
+                <div class="panel panel-default">
+                    <!-- O "panel" é um componente do Bootstrap utilizado para criar caixas de conteúdo. "panel-default" aplica o estilo padrão. -->
+
+                    <div class="panel-heading">
+                        <!-- O "panel-heading" é a parte superior do painel, geralmente usada para o título ou cabeçalho. -->
+                        
+                        <a class="panel-title">Lista de Funcionários</a>
+                        <!-- O título do painel, que pode ser clicável. Aqui, usamos a tag <a> para criar um link, embora não esteja linkando a nenhuma página. -->
+                    </div>
+
+                    <div class="panel-body">
+                        <!-- O "panel-body" é a área principal do painel onde o conteúdo é inserido. -->
+                        
+                        <table class="table table-striped">
+                            <!-- A tabela é criada com a classe "table", que aplica os estilos do Bootstrap para tabelas.
+                            A classe "table-striped" adiciona listras alternadas nas linhas da tabela para melhorar a legibilidade. -->
+                            
+                            <thead>
+                                <!-- A seção "thead" define o cabeçalho da tabela. -->
+                                <tr>
+                                    <th>Cod.</th>
+                                    <!-- A célula "Cod." para o código do funcionário. -->
+                                    
+                                    <th>Nome</th>
+                                    <!-- A célula "Nome" para o nome do funcionário. -->
+                                    
+                                    <th>Salario</th>
+                                    <!-- A célula "Salario" para o salário do funcionário. -->
+                                </tr>
+                            </thead>
+                            
+                            <tbody>
+                                <!-- A seção "tbody" contém as linhas de dados da tabela. -->
+                                
+                                <tr>
+                                    <!-- Uma linha de dados na tabela. -->
+                                    
+                                    <td>001</td>
+                                    <!-- O código do primeiro funcionário. -->
+                                    
+                                    <td>Joaquim</td>
+                                    <!-- O nome do funcionário. -->
+                                    
+                                    <td>R$ 1.200,00</td>
+                                    <!-- O salário do funcionário. -->
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Fim do corpo do painel -->
+                </div>
+                <!-- Fim do painel -->
+            </div>
+            <!-- Fim do container -->
+        </div>
+    </div>
+    <!-- Fim do jumbotron -->
+    
+    <!-- Inclusão dos scripts necessários para a funcionalidade do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <!-- O jQuery é necessário para garantir que os componentes interativos do Bootstrap, como dropdowns e modais, funcionem corretamente. -->
+    
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- O arquivo JavaScript do Bootstrap é necessário para a funcionalidade interativa dos componentes, como dropdowns e painéis de abas. -->
+
+</body>
+
+</html>
+
