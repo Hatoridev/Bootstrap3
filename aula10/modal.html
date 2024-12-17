@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <!-- Definindo o tipo de codificação de caracteres para UTF-8, importante para suportar caracteres especiais como acentos -->
+    <meta charset="utf-8">
+
+    <!-- Configura o modo de compatibilidade para o IE e Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- Título da página, que aparece na aba do navegador -->
+    <title>Curso de Bootstrap 3 - Modais</title>
+
+    <!-- Descrição da página, usada por motores de busca e outras ferramentas -->
+    <meta name="description" content="Curso de Bootstrap 3">
+
+    <!-- Meta tag para garantir que o layout seja responsivo em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Link para o CSS do Bootstrap 3, necessário para estilizar os componentes da página, incluindo o modal -->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos adicionais podem ser colocados aqui, se necessário -->
+    <style>
+        /* Se quiser personalizar mais os modais ou adicionar outros estilos, é aqui que pode colocar */
+    </style>
+</head>
+
+<body>
+    <!-- Container principal da página -->
+    <div class="container">
+        <h1>Exemplos de Modais no Bootstrap 3</h1>
+
+        <!-- Botão que aciona o primeiro modal (modal simples) -->
+        <button class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo1">Abrir Modal Exemplo 1</button>
+        
+        <!-- Modal Exemplo 1: Modal simples -->
+        <!-- A classe "fade" aplica uma animação de transição -->
+        <div class="modal fade" id="modalExemplo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!-- Modal Dialog define a caixa de diálogo que contém o conteúdo do modal -->
+            <div class="modal-dialog" role="document">
+                <!-- O conteúdo do modal -->
+                <div class="modal-content">
+                    <!-- Cabeçalho do modal -->
+                    <div class="modal-header">
+                        <!-- Botão de fechar o modal -->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span> <!-- O símbolo '×' para fechar -->
+                        </button>
+                        <!-- Título do modal -->
+                        <h4 class="modal-title" id="exampleModalLabel">Modal Simples</h4>
+                    </div>
+                    <!-- Corpo do modal, onde fica o conteúdo -->
+                    <div class="modal-body">
+                        Este é um exemplo de um modal simples. Ele contém apenas um título e corpo de texto.
+                    </div>
+                    <!-- Rodapé do modal -->
+                    <div class="modal-footer">
+                        <!-- Botão para fechar o modal -->
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Botão que aciona o segundo modal (modal com botões de ação) -->
+        <button class="btn btn-warning" data-toggle="modal" data-target="#modalExemplo2">Abrir Modal Exemplo 2</button>
+
+        <!-- Modal Exemplo 2: Modal com botões de ação -->
+        <div class="modal fade" id="modalExemplo2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="exampleModalLabel">Confirmar Ação</h4>
+                    </div>
+                    <div class="modal-body">
+                        Você tem certeza de que deseja continuar com esta ação?
+                    </div>
+                    <div class="modal-footer">
+                        <!-- Botão de cancelamento -->
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                        <!-- Botão de confirmação -->
+                        <button type="button" class="btn btn-primary">Confirmar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Botão que aciona o terceiro modal (modal de alerta) -->
+        <button class="btn btn-danger" data-toggle="modal" data-target="#modalExemplo3">Abrir Modal Exemplo 3</button>
+
+        <!-- Modal Exemplo 3: Modal de alerta -->
+        <div class="modal fade" id="modalExemplo3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="exampleModalLabel">Atenção!</h4>
+                    </div>
+                    <div class="modal-body">
+                        Este é um alerta. Certifique-se de que você está ciente do impacto dessa ação.
+                    </div>
+                    <div class="modal-footer">
+                        <!-- Botão de "Entendi" para fechar o modal -->
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Entendi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Botão que aciona o quarto modal (modal com formulário) -->
+        <button class="btn btn-info" data-toggle="modal" data-target="#modalExemplo4">Abrir Modal Exemplo 4</button>
+
+        <!-- Modal Exemplo 4: Modal com formulário -->
+        <div class="modal fade" id="modalExemplo4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="exampleModalLabel">Preencha o Formulário</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <!-- Campo para e-mail -->
+                            <div class="form-group">
+                                <label for="formEmail">E-mail</label>
+                                <input type="email" class="form-control" id="formEmail" placeholder="Digite seu e-mail">
+                            </div>
+                            <!-- Campo para senha -->
+                            <div class="form-group">
+                                <label for="formPassword">Senha</label>
+                                <input type="password" class="form-control" id="formPassword" placeholder="Digite sua senha">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- Botão de cancelamento -->
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                        <!-- Botão para enviar o formulário -->
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- Fim do container -->
+    
+    <!-- Scripts necessários para o funcionamento dos modais -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <!-- jQuery é necessário para os componentes interativos do Bootstrap, incluindo modais -->
+    
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS contém a funcionalidade para ativar e controlar os modais -->
+</body>
+</html>
+
