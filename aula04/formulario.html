@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulário com Bootstrap 3</title>
+
+    <!-- Link para o CSS do Bootstrap 3 -->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- O container centraliza o conteúdo e dá uma margem automática em todas as direções -->
+
+        <h2>Formulário Exemplo</h2>
+        <!-- Título do formulário -->
+
+        <form class="form-horizontal">
+            <!-- A classe "form-horizontal" organiza os campos do formulário em linhas horizontais -->
+
+            <!-- Campo de E-mail -->
+            <div class="form-group has-warning">
+                <!-- A classe "form-group" agrupa os elementos do formulário, como o rótulo e o campo de entrada. "has-warning" adiciona um estilo visual para indicar que algo está errado (geralmente usado para validação). -->
+                <label for="warning" class="control-label col-sm-2">E-mail</label>
+                <!-- O "control-label" é uma classe do Bootstrap que aplica estilos ao rótulo, alinhando-o corretamente. "col-sm-2" define que o rótulo ocupará 2 colunas em dispositivos pequenos. -->
+                
+                <div class="col-sm-10">
+                    <!-- O "col-sm-10" define que o campo de entrada ocupará 10 colunas no layout. -->
+                    <input type="text" class="form-control" id="warning" placeholder="Digite seu e-mail">
+                    <!-- "form-control" é a classe padrão para os campos de formulário do Bootstrap, garantindo que o campo ocupe toda a largura disponível. -->
+                </div>
+            </div>
+
+            <!-- Campo de Senha -->
+            <div class="form-group">
+                <label for="password" class="control-label col-sm-2">Senha</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+                </div>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <!-- A classe "checkbox" estiliza os checkboxes -->
+                        <label>
+                            <input type="checkbox" value=""> Aceito os termos e condições
+                            <!-- O tipo "checkbox" cria uma caixa de seleção. -->
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Radio Button -->
+            <div class="form-group">
+                <label class="control-label col-sm-2">Sexo</label>
+                <div class="col-sm-10">
+                    <div class="radio">
+                        <!-- A classe "radio" estiliza os botões de rádio -->
+                        <label>
+                            <input type="radio" name="sexo" value="masculino"> Masculino
+                            <!-- O "name" é importante, pois garante que apenas um item possa ser selecionado dentro do grupo de botões de rádio. -->
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="sexo" value="feminino"> Feminino
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Select -->
+            <div class="form-group">
+                <label for="sel1" class="control-label col-sm-2">Selecione um país:</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="sel1">
+                        <!-- A tag "select" cria um campo de seleção. A classe "form-control" garante que o campo ocupe a largura total. -->
+                        <option>Brasil</option>
+                        <option>Argentina</option>
+                        <option>Chile</option>
+                        <option>Uruguai</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Botão de Envio -->
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">
+                        <!-- O botão "btn btn-primary" aplica o estilo padrão de um botão do Bootstrap com a cor primária -->
+                        Enviar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Script do jQuery necessário para interatividade -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <!-- Script do Bootstrap para funcionalidades como modais, dropdowns, etc. -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>
+
