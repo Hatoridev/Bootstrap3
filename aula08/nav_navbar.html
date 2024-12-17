@@ -1,0 +1,101 @@
+<!doctype html>
+<!-- A declaração DOCTYPE indica que estamos utilizando HTML5, o padrão moderno para documentos HTML. -->
+
+<html lang="pt-br">
+<!-- O atributo "lang" indica que o conteúdo da página está em português do Brasil. -->
+
+<head>
+    <!-- O <head> contém as configurações e links de metadados, como títulos e arquivos de estilo. -->
+    
+    <meta charset="utf-8">
+    <!-- O charset "utf-8" assegura que caracteres especiais sejam exibidos corretamente. -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Esta meta tag garante que a página seja exibida corretamente em navegadores modernos e no Internet Explorer. -->
+    
+    <title>Curso de Bootstrap 3</title>
+    <!-- O título da página será exibido na aba do navegador. -->
+    
+    <meta name="description" content="curso de bootstrap 3">
+    <!-- Esta tag fornece uma descrição para a página, útil para motores de busca. -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- A tag "viewport" assegura que a página seja responsiva, ajustando o layout em diferentes tamanhos de tela. -->
+    
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o arquivo CSS do Bootstrap 3, fornecendo estilos para componentes como navbar e botões. -->
+
+    <style>
+        /* Estilos personalizados para a navbar fixa na parte inferior da página */
+        .navbar-outro {
+            background-color: orange;
+            color: #fff;
+        }
+        /* Define a cor de fundo como laranja e o texto como branco para a barra de navegação personalizada. */
+    </style>
+
+</head>
+
+<body>
+    <!-- O corpo da página começa aqui. -->
+
+    <!-- Barra de navegação fixa na parte inferior -->
+    <a class="navbar navbar-outro navbar-fixed-bottom">
+        <!-- A classe "navbar" aplica os estilos do Bootstrap, enquanto "navbar-fixed-bottom" fixa a barra de navegação na parte inferior da página. -->
+
+        <div class="container-fluid">
+            <!-- A classe "container-fluid" cria um container que ocupa 100% da largura da tela. -->
+
+            <div class="navbar-header">
+                <!-- A "navbar-header" contém os elementos principais da navbar, como logo ou título. -->
+
+                <a class="navbar-brand" href="#">
+                    <!-- "navbar-brand" é usado para o nome ou logo da barra de navegação. O atributo href="#" indica que o link não vai a lugar nenhum. -->
+                    <img alt="Brand" src="bootstrap.gif" width="25" />
+                    <!-- Exibe uma imagem como o logo da barra de navegação. -->
+                </a>
+            </div>
+
+            <!-- Botão na barra de navegação -->
+            <button class="btn btn-default navbar-btn">Meu botão</button>
+            <!-- O botão é criado com a classe "navbar-btn", que ajusta o estilo para um botão de barra de navegação. -->
+
+            <a href="#" class="navbar-link">Clica-me</a>
+            <!-- Um link com a classe "navbar-link", que é estilizado para se encaixar na barra de navegação. -->
+
+            <span class="navbar-text">Texto adicional</span>
+            <!-- "navbar-text" é usado para adicionar texto simples na barra de navegação. -->
+
+            <div class="navbar-right">
+                <!-- "navbar-right" alinha o conteúdo à direita da barra de navegação. -->
+
+                <form action="#" class="navbar-form">
+                    <!-- O "navbar-form" é usado para criar formulários dentro da barra de navegação, como uma barra de pesquisa. -->
+
+                    <input type="text" placeholder="Digite algo" class="form-control">
+                    <!-- Um campo de entrada de texto com a classe "form-control", que aplica os estilos padrão do Bootstrap para campos de formulário. -->
+                </form>
+            </div>
+
+        </div>
+    </a>
+
+    <div class="jumbotron">
+        <!-- O "jumbotron" é uma classe do Bootstrap que cria uma área de destaque na página. -->
+
+        <div class="container">
+            <!-- A "container" centraliza e aplica margens automáticas ao conteúdo. -->
+        </div>
+    </div>
+
+    <!-- Scripts necessários para a funcionalidade do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <!-- Inclusão do jQuery, necessário para a funcionalidade interativa dos componentes do Bootstrap. -->
+    
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- Inclusão do JavaScript do Bootstrap, que oferece interatividade para componentes como dropdowns e modais. -->
+
+</body>
+
+</html>
+
