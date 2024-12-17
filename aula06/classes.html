@@ -1,0 +1,98 @@
+<!doctype html>
+<!-- A declaração do DOCTYPE define o tipo de documento e a versão do HTML, no caso, HTML5. -->
+
+<html lang="pt-br">
+<!-- O elemento <html> contém todo o conteúdo da página. O atributo "lang" especifica que o conteúdo está em português do Brasil. -->
+
+<head>
+    <!-- A seção <head> contém metadados sobre o documento, como configurações de caracteres, título, links de recursos e outras informações de configuração. -->
+    
+    <meta charset="utf-8">
+    <!-- Define o conjunto de caracteres UTF-8, garantindo que caracteres especiais sejam renderizados corretamente. -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Garante que a página seja renderizada corretamente em diferentes navegadores e versões, especialmente o Internet Explorer. -->
+    
+    <title>Exemplo de classes auxiliares do Bootstrap</title>
+    <!-- Define o título da página, que será exibido na aba do navegador. -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Faz com que a página seja responsiva, adaptando-se ao tamanho da tela do dispositivo. -->
+    
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Inclui o arquivo CSS do Bootstrap para aplicar estilos e componentes. -->
+</head>
+
+<body>
+    <!-- A seção <body> contém o conteúdo visível da página. -->
+
+    <div class="container">
+    <!-- A classe "container" do Bootstrap cria uma área centralizada com espaçamento adequado para o conteúdo. -->
+    
+        <h1>Exemplo de Classes Auxiliares do Bootstrap</h1>
+        <!-- O título da página é exibido aqui. -->
+
+        <!-- Exemplo de classe de alerta (alert) -->
+        <div class="alert alert-warning" role="alert">
+        <!-- A classe "alert" cria um bloco de alerta, e a classe "alert-warning" define um alerta com uma cor amarela (de aviso). -->
+            Este é um alerta de aviso! Algo pode não estar certo.
+        </div>
+        
+        <!-- Exemplo de ocultar um elemento com "hidden" -->
+        <div class="hidden">
+        <!-- A classe "hidden" esconde o elemento da página (não ocupa espaço visual, mas permanece no código). -->
+            Este conteúdo está escondido e não será visível na página.
+        </div>
+        
+        <!-- Exemplo de sombra usando a classe "well" -->
+        <div class="well">
+        <!-- A classe "well" aplica uma borda arredondada e um fundo cinza claro para destacar o conteúdo. -->
+            Este é um conteúdo destacado com a classe "well", dando um efeito de sombra.
+        </div>
+
+        <!-- Exemplo de uso de classes de sombreamento (shadow) -->
+        <div class="shadow-lg p-3 mb-5 bg-white rounded">
+        <!-- "shadow-lg" cria uma sombra maior, "p-3" adiciona preenchimento, "mb-5" adiciona margem na parte inferior, "bg-white" define o fundo branco, "rounded" arredonda as bordas. -->
+            Este é um conteúdo com uma sombra grande, criando um efeito de profundidade.
+        </div>
+
+        <!-- Exemplo de uso de texto transformado -->
+        <p class="text-uppercase">
+        <!-- A classe "text-uppercase" transforma o texto para letras maiúsculas. -->
+            Este texto está em letras maiúsculas.
+        </p>
+
+        <p class="text-lowercase">
+        <!-- A classe "text-lowercase" transforma o texto para letras minúsculas. -->
+            ESTE TEXTO ESTÁ EM LETRAS MINÚSCULAS.
+        </p>
+
+        <p class="text-capitalize">
+        <!-- A classe "text-capitalize" coloca a primeira letra de cada palavra em maiúscula. -->
+            este texto foi capitalizado.
+        </p>
+        
+        <!-- Exemplo de uso da classe "hidden-xs" para ocultar em telas pequenas -->
+        <div class="hidden-xs">
+        <!-- A classe "hidden-xs" oculta o conteúdo em telas extra pequenas (como celulares). -->
+            Este conteúdo só será visível em telas maiores.
+        </div>
+        
+        <!-- Exemplo de classe para texto em negrito -->
+        <p class="text-bold">
+        <!-- A classe "text-bold" aplica o estilo em negrito ao texto. -->
+            Este texto está em negrito.
+        </p>
+
+    </div>
+
+    <!-- Inclusão dos scripts do jQuery e Bootstrap para garantir a funcionalidade interativa dos componentes -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <!-- O jQuery é necessário para interações do Bootstrap, como toggle de classes, animações, etc. -->
+    
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- O arquivo JavaScript do Bootstrap fornece as funcionalidades dinâmicas para os componentes, como dropdowns, modais, etc. -->
+</body>
+
+</html>
+
