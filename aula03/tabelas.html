@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- A declaração <!DOCTYPE html> define que estamos usando HTML5, garantindo a compatibilidade com os navegadores modernos. -->
+    
+    <!-- A meta tag http-equiv="X-UA-Compatible" com content="IE=edge,chrome=1" força o navegador a usar o modo mais moderno de renderização, evitando que o Internet Explorer use modos antigos (como o "IE7" ou "IE8"). -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Curso de bootstrap 3</title>
+    <!-- O título da página que aparece na aba do navegador. -->
+
+    <meta name="description" content="curso de bootstrap 3">
+    <!-- A meta tag description descreve o conteúdo da página. Esse conteúdo é mostrado frequentemente em resultados de pesquisa. -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- A meta tag viewport ajusta a largura da página para se adaptar ao tamanho da tela do dispositivo (mobile, tablet, desktop). -->
+    
+    <!-- Incluindo o CSS do Bootstrap a partir de uma CDN para aplicar o estilo e os componentes responsivos do Bootstrap 3. -->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Estilo customizado pode ser adicionado aqui, mas não há nenhum estilo no momento. */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- A classe "container" cria um espaço centralizado e com margens, que irá ajustar o conteúdo responsivamente. -->
+
+        <div class="col-md-6 col-md-offset-3">
+            <!-- A classe "col-md-6" define que a coluna ocupará 50% da largura da tela em dispositivos médios (maiores que 768px).
+                 "col-md-offset-3" cria um deslocamento de 3 colunas à esquerda, centralizando o conteúdo horizontalmente. -->
+
+            <div class="table-responsive">
+                <!-- A classe "table-responsive" torna a tabela rolável horizontalmente em telas pequenas (quando o conteúdo excede o tamanho da tela). -->
+                
+                <!-- A tabela do Bootstrap com as classes "table" e "table-striped" aplica o estilo padrão de tabela, com listras alternadas para as linhas. -->
+                <table class="table table-striped">
+                    <thead>
+                        <!-- Cabeçalho da tabela, com os títulos das colunas -->
+                        <tr>
+                            <th>Protocolo</th>
+                            <th>Razão Social</th>
+                            <th>CNPJ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Corpo da tabela, onde os dados são listados -->
+                        <tr class="danger">
+                            <!-- A classe "danger" aplica uma cor de fundo vermelha, frequentemente usada para destacar algo errado ou com erro -->
+                            <td>0001</td>
+                            <td>Bootstrap essencial - ME</td>
+                            <td>00.000.000/0001-00</td>
+                        </tr>
+                        <tr class="success">
+                            <!-- A classe "success" aplica uma cor de fundo verde, normalmente usada para indicar sucesso ou algo positivo -->
+                            <td>0001</td>
+                            <td>Bootstrap essencial - ME</td>
+                            <td>00.000.000/0001-00</td>
+                        </tr>
+                        <tr>
+                            <!-- Esta linha não tem nenhuma classe extra, então será renderizada com o estilo padrão da tabela -->
+                            <td>0001</td>
+                            <td>Bootstrap essencial - ME</td>
+                            <td>00.000.000/0001-00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inclusão do jQuery, necessário para o funcionamento de componentes interativos do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    <!-- Inclusão do JavaScript do Bootstrap, necessário para funcionalidades interativas como dropdowns, modais, etc. -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>
+
