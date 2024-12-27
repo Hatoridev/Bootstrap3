@@ -154,16 +154,14 @@ Repository with small implementations of Bootstrap 3 in web development language
    - To access from another device, use the IP:  
      ```
      http://<your-device-ip>:8000/file.html
-     ```  
+     ```
 
-
-### Linguagens  
+### Languages  
 
 <div align="left">  
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="60" alt="HTML logo" />  
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="60" alt="CSS logo" />  
 </div>  
-
 
 ### Framework  
 
